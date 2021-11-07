@@ -30,13 +30,15 @@ namespace WindowsFormsAppEasyCs85
         {
             InitializeComponent();
             this.Text = "Midterm Exam";
-            this.Width = 400;
-            this.Height = 300;
+            this.Width = 300;
+            this.Height = 180;
 
             lb = new Label();
             lb.Text = "This is a midterm exam.\nPlease push either button";
-            this.Width = 200;
-            this.Height = 100;
+            lb.Top = scales["top"];
+            lb.Left = scales["left"];
+            lb.Width = 200;
+            lb.Height = 50;
 
 
             bt1 = new Button();
@@ -44,12 +46,14 @@ namespace WindowsFormsAppEasyCs85
             bt1.Width = scales["btWidth"];
             bt1.Height = scales["btHeight"];
             bt1.Top = lb.Bottom;
+            bt1.Left = scales["left"];
             
             bt2 = new Button();
             bt2.Text = "FadeIn a picture";
             bt2.Width = scales["btWidth"];
             bt2.Height = scales["btHeight"];
             bt2.Top = bt1.Bottom;
+            bt2.Left = scales["left"];
             
             lb.Parent = this;
             bt1.Parent = this;
