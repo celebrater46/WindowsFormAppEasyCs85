@@ -12,7 +12,6 @@ namespace WindowsFormsAppEasyCs85
         private Dictionary<string, int> scales = new Dictionary<string, int>()
         {
             {"graphTop", 30},
-            // {"graphBottom", 120},
             {"graphWidth", 20},
         };
         
@@ -34,7 +33,6 @@ namespace WindowsFormsAppEasyCs85
                 g.DrawRectangle(
                     pen, 
                     (scales["graphWidth"] + 30) * i + 20, 
-                    // scales["graphBottom"], 
                     scales["graphTop"] + (100 - values[i]), 
                     scales["graphWidth"],
                     values[i]
