@@ -55,6 +55,7 @@ namespace WindowsFormsAppEasyCs85
             bt2.Left = scales["left"];
 
             bt1.Click += new EventHandler(DrawGraph);
+            bt2.Click += new EventHandler(FadeInPicture)
             
             lb.Parent = this;
             bt1.Parent = this;
@@ -65,6 +66,12 @@ namespace WindowsFormsAppEasyCs85
         {
             FormGraph fg = new FormGraph();
             fg.ShowDialog();
+        }
+
+        public void FadeInPicture(Object sender, EventArgs e)
+        {
+            FormFadeInPicture fp = new FormFadeInPicture();
+            fp.ShowDialog();
         }
     }
 }

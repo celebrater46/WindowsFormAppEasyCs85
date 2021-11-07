@@ -52,6 +52,12 @@
         <Compile Include="Form1.Designer.cs">
             <DependentUpon>Form1.cs</DependentUpon>
         </Compile>
+        <Compile Include="FormFadeInPicture.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="FormFadeInPicture.Designer.cs">
+          <DependentUpon>FormFadeInPicture.cs</DependentUpon>
+        </Compile>
         <Compile Include="FormGraph.cs">
           <SubType>Form</SubType>
         </Compile>
