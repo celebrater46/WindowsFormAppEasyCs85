@@ -40,7 +40,6 @@ namespace WindowsFormsAppEasyCs85
             lb.Width = 200;
             lb.Height = 50;
 
-
             bt1 = new Button();
             bt1.Text = "Graph";
             bt1.Width = scales["btWidth"];
@@ -54,11 +53,18 @@ namespace WindowsFormsAppEasyCs85
             bt2.Height = scales["btHeight"];
             bt2.Top = bt1.Bottom;
             bt2.Left = scales["left"];
+
+            bt1.Click += new EventHandler(DrawGraph);
             
             lb.Parent = this;
             bt1.Parent = this;
             bt2.Parent = this;
-            
+        }
+
+        public void DrawGraph(Object sender, EventArgs e)
+        {
+            FormGraph fg = new FormGraph();
+            fg.ShowDialog();
         }
     }
 }
